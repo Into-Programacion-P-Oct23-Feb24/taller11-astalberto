@@ -7,7 +7,15 @@ package problemas;
 
 /**
  *
- * @author reroes
+ * @author reroes Generar un procedimiento (método que no devuelva valor) que
+ * imprima los valor pares de un arreglo bidimensional.
+ *
+ * El arreglo para probar la solución es:
+ *
+ * int[][] informacion = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};
+ *
+ * El procedimiento o método debe se invocado desde el método main (principal);
+ * además el método debe recibir como parámetro un arreglo bidimensional.
  */
 public class Problema1 {
 
@@ -20,7 +28,13 @@ public class Problema1 {
     }
 
     public static void imprimirDatos(int[][] datos) {
-
+        for (int i = 0; i < datos.length; i++) {
+            for (int j = 0; j < datos.length; j++) {
+                if ((datos[i][j]%2)==0) {
+                    System.out.println(datos[i][j]);
+                }
+            }
+        }
     }
 
 }
