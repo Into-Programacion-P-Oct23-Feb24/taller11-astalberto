@@ -70,9 +70,9 @@ public class Problema4 {
         double valorP;
         System.out.println("Ingrese el valor del Inmueble");
         valor = entrada.nextDouble();
-        valorP = valor *0.2;
-        System.out.printf("Cliente %s con cedula %s tiene un bien "+
-                "inmueble valorado en $%.2f y tiene que pagar de predio $ %.2f\n",
-                nomb,cedula, valor,valorP);
+        valorP = valor * 0.2;
+        System.out.printf("Cliente %s con cedula %s tiene un bien "
+                + "inmueble valorado en $%.2f y tiene que pagar de predio $ %.2f\n",
+                nomb, cedula, valor, valorP);
     }
 }
